@@ -18,12 +18,12 @@ export default function read() {
   });
 }
 
-read().then((buffer) => {
-  const view = new Uint16Array(buffer);
-  let result = "";
-  for (let i = 0; i < view.length; i++) {
-    result += String.fromCharCode(view[i]);
-  }
-  console.log("Декодированная строка:", result);
-  console.log("JSON:", JSON.parse(result));
-});
+// read().then((buffer) => {
+//   const view = new Uint16Array(buffer);
+//   let result = "";
+//   for (let i = 0; i < view.length; i++) {
+//     result += String.fromCharCode(view[i]);
+//   }
+//   console.log("Декодированная строка:", result);
+//   console.log("JSON:", JSON.parse(result));
+// });
